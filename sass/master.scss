@@ -15,6 +15,7 @@ $color-4:#F7A710;
 $color-5:#9370E9;
 $color-6:#DDD5F8;
 $shadow-1:3px 3px 3px rgba(0, 0, 0, 0.81);
+$shadow-2:3px 3px 3px rgba(0, 0, 0, 0.4);
 
 
 
@@ -27,7 +28,6 @@ $shadow-1:3px 3px 3px rgba(0, 0, 0, 0.81);
 }
 
 .page-wrapper, .p-wrap {
-  position:relative;
   margin: auto;
   max-width: 1200px;
   width: 100%;
@@ -40,11 +40,13 @@ $shadow-1:3px 3px 3px rgba(0, 0, 0, 0.81);
 header 
 ========================================================== */
 .header {
+  background:white;
   position:absolute;
   width:100%;
-  top:110px;
+  top:0px;
   margin:0;
   z-index: 200;
+  box-shadow:$shadow-2;
 }
 
 /* business information across the top of header */
@@ -78,7 +80,7 @@ logo
   width:270px;
   display: block;
   position: absolute;
-  top:-90px;
+  top:20px;
   padding:0px;
   a:hover {
     color: black !important;
@@ -98,7 +100,6 @@ nav
 
 
 .nav {
-  //background:rgba(255,255,255,.6);
   height:100px;
   padding:0;
   display: block;
