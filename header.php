@@ -28,8 +28,10 @@
 		<div class="wrapper clear">
 
 			<!-- header -->
+			<?php echo do_shortcode('[layerslider id="2"]'); ?>
+			
 			<header class="header clear" role="banner">
-                <div class="business-info section-top clear">
+				<div class="business-info section-top clear">
                     
                     <div class="page-wrapper clear">
                     <?php dynamic_sidebar('top-l'); ?>
@@ -37,6 +39,13 @@
 					</div>
                     
                 </div>
+                <div class="p-wrap">
+				  <div class="logo">
+										<a href="<?php echo home_url(); ?>">
+											<!-- svg logo - toddmotto.com/mastering-svg-use-for-a-retina-web-fallbacks-with-png-script -->
+											<img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="Logo" class="logo-img">
+										</a>
+				                    </div>
 
 
 					<!-- nav -->
@@ -44,17 +53,13 @@
     
                         <div class="page-wrapper clear">    
                         <!-- logo -->
-				    <div class="logo">
-						<a href="<?php echo home_url(); ?>">
-							<!-- svg logo - toddmotto.com/mastering-svg-use-for-a-retina-web-fallbacks-with-png-script -->
-							<img src="<?php echo get_template_directory_uri(); ?>/img/float-dreams_logo.svg" alt="Logo" class="logo-img">
-						</a>
-                    </div>
+				  
 					<!-- /logo -->
                            
                             <?php  add_custom_nav_menu('menu-1'); ?>
                  </div>
 					</nav>
 					<!-- /nav -->
+				</div>
       		</header>
 			<!-- /header -->

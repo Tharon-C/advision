@@ -1,15 +1,20 @@
-$font-1:'Open Sans', sans-serif;
+$font-1:'Lato', sans-serif;
+$font-2:'Ubunto', sans-serif;
 $grey-1: white;
 $grey-2: #F2F2F2;
 $grey-3: rgb(229, 229, 229);
-$grey-4:lightgrey;
-$color-1:#00A9FF;
-$color-2:#0386C9;
+$grey-4:#B4B4B4;
+$grey-5:#969696;
+$grey-6:#555555;
+$grey-6:#555555;
+$grey-7:#555555;
+$color-1:#D62229;
+$color-2:#0DB80D;
 $color-3:rgb(229, 229, 229);
 $color-4:#F7A710;
 $color-5:#9370E9;
 $color-6:#DDD5F8;
-$shadow-1:0 1px 2px rgba(0, 0, 0, 0.21);
+$shadow-1:3px 3px 3px rgba(0, 0, 0, 0.81);
 
 
 
@@ -33,29 +38,30 @@ $shadow-1:0 1px 2px rgba(0, 0, 0, 0.21);
 
 /*======================================================== 
 header 
-==========================================================*/
+========================================================== */
 .header {
-  width:20%;
-  position:fixed;
+  position:absolute;
+  width:100%;
+  top:110px;
+  margin:0;
+  z-index: 200;
 }
 
 /* business information across the top of header */
 
 .business-info {
-  background:$color-2;
-    padding: 5px;
-      a {
-        color: $color-2;
+  //background:rgba(255,255,255,.6);
+    a {
+      color: $color-2;
     }
     .top-wdgt-l {
-      color:$grey-1;
+      color:black;
       float: left;
     }
      .top-wdgt-r {
-      color:$grey-1;
+      color:black;
       float: right;
     }
-
       li {
         display: inline-block;
         margin-left: 20px;
@@ -69,16 +75,20 @@ logo
 
 .logo {
   float:left;
-  width:150px;
+  width:270px;
   display: block;
-  position: relative;
-  padding:10px;
+  position: absolute;
+  top:-90px;
+  padding:0px;
   a:hover {
     color: black !important;
+    border:none;
   }
+
 }
 
 .logo-img {
+  width:100%;
   margin: 0;
 }
 
@@ -88,19 +98,20 @@ nav
 
 
 .nav {
+  //background:rgba(255,255,255,.6);
+  height:100px;
   padding:0;
-    display: block;
-    position: relative;
-    z-index: 10;
-    background: $color-1;
-    box-shadow:$shadow-1;
+  display: block;
+  position: relative;
+  z-index: 10;
+  //  border-bottom: solid 1px $grey-4;
    ul {
       margin: 0;
       padding: 0;
       float: right;
       position:absolute;
       right:0;
-      bottom:0;
+      bottom:20px;
      }
     li {
       position:relative;
@@ -108,16 +119,30 @@ nav
       margin-left: -4px;
       a {
         display:block;
-        color: $grey-1;
-        padding: 18px 30px;
-        text-transform: uppercase;
-        font-size: 14px;
+        color: black;
+        padding: 10px 20px;
+        font-size: 16px;
         position: relative;
+
       }
     }
-    a:hover {
-       background: $color-1;
+    a:before {
+      content:"";
+      width:0px;
     }
+
+    a:hover:before {
+      transition: width.4s;
+      position:absolute;
+      margin:auto;
+      right:0;
+      left:0;
+      content:"";
+       border-bottom:solid 5px $color-1;
+       width:60px;
+       height:40px;
+    }
+
     ul.sub-menu {
     display:none;
     a{
@@ -192,7 +217,7 @@ footer
 ================================================================*/
 
 footer {
-  background:$color-1;
+  background:$grey-6;
   text-align:center;
   color: $grey-1;
   padding: 10px;
@@ -202,6 +227,20 @@ footer {
     color: $grey-1;
   }
 }
+
+
+/*=============================================================== 
+Footer Images 
+================================================================*/
+.footer-images{
+  .img-1 {
+    height:216px;
+    img {
+      min-width: 600px;
+    }
+  }
+}
+
 
 /* ==========================================================================
    =COLOR
@@ -235,31 +274,79 @@ footer {
 }
 
 
+.txt-color-1 {
+  color: $color-1;
+}
+
+.txt-color-2 {
+  color: $color-2;
+}
+
+.txt-color-3 {
+  color: $color-3;
+}
+
+.txt-color-4 {
+  color: $color-4;
+}
+
+.txt-color-5 {
+  color: $color-5;
+}
+
+.txt-color-6 {
+  color: $color-6;
+}
+
 /* ===========================================================================
   typography
   =========================================================================== */
 .headline-1 {
-  color:$color-2;
-  display:block;
-  font-family:$font-1;
-  font-weight: 700;
-  font-size:53px;
-}
-
-
-.title-1 {
+  color:black;
   display:block;
   font-family:$font-1;
   font-weight: 400;
-  font-size:42px;
+  font-size:53px;
+}
+
+.headline-2 {
+  margin-bottom:15px;
+  width:100%;
+  position:relative;
+  color:black;
+  font-family:'Open Sans';
+  font-weight: 400;
+  font-size:22px;
+  display: block;
 }
 
 
-.title-2 {
+.title-1{
   display:block;
-  font:$font-1;
+  font-family:$font-1;
   font-weight:700;
+  font-size:40px;
+}
+
+.title-2 {
+  padding:0 10px;
+  position:relative;
+  text-transform:uppercase;
+  text-align: center;
+  color:$grey-6;
+  font-family:'Open Sans';
+  font-weight: 400;
   font-size:22px;
+  display: block;
+  margin:auto;
+}
+
+
+.title-3 {
+  display:block;
+  font-family:$font-1;
+  font-weight:800;
+  font-size:18px;
 }
 
 /* ==========================================================================
@@ -293,33 +380,24 @@ input:focus, textarea:focus {
   border-color: $color-1;
 }
 
-input[type='button'], input[type='submit'], button, .button {
-  border: none;
-  background: transparent;
-  line-height: 1;
-  cursor: pointer;
-  padding: 1em 1.5em;
-  -webkit-transition: all .3s ease;
-  -moz-transition: all .3s ease;
-  -ms-transition: all .3s ease;
-  -o-transition: all .3s ease;
-  transition: all .3s ease;
-  display: block;
-  margin-bottom: .75em;
-  margin-bottom: .75rem;
-}
-
 .form-btn-1 {
    color: $grey-1;
-  background: $color-2 !important;
+  background: $color-1 !important;
 }
 
 .btn-1 {
+  text-align: center;
+  text-transform: uppercase;
+  display:inline-block;
+  padding:10px 20px;
   color: $grey-1;
-  background: $color-2;
+  background: $color-1;
+  box-shadow:$shadow-1;
 }
 .btn-1:hover {
-  background: $color-2;
+  color:$grey-1 !important;
+  background: #C31F25;
+  box-shadow:none;
 }
 .btn-1:focus, .btn-1:active {
   background: $color-2;
@@ -327,24 +405,39 @@ input[type='button'], input[type='submit'], button, .button {
 
 .btn-2 {
    color: $grey-1;
-  background: $color-4;
+  background: $color-2;
+   box-shadow:$shadow-1;
 }
 .btn-2:hover {
-  background: $color-4;
+  background: $color-2;
+   box-shadow:none;
 }
 .btn-2:focus, .btn-2:active {
-  background: $color-4;
+  background: $color-2;
 }
 
 .btn-3 {
   font-size: .875em;
   background: $grey-3;
+  border:solid 1px grey;
 }
 .btn-3:hover {
-  background: $grey-3;
+  background: lightgrey;
 }
 .btn-3:focus, .btn-3:active {
   background: $grey-3;
+}
+
+input[type='button'], input[type='submit'], button, .button {
+  border: none;
+  text-transform: uppercase;
+  background: transparent;
+  line-height: 1;
+  cursor: pointer;
+  padding: .8em 1.5em;
+  transition: all .3s ease;
+  display: block;
+  margin-bottom: 15px;
 }
 
 /* ==========================================================================
@@ -370,11 +463,62 @@ input[type='button'], input[type='submit'], button, .button {
 /* =========================================================================
    =objects
    ========================================================================= */
-.img-1 {
-  padding:10px;
-  background:$grey-3;
-  box-shadow:$shadow-1;
+.box-1 {
+  font-size:14px;
+  border:solid 1px $grey-4;
+  border-radius:8px;
+  position:relative;
+  min-height: 370px;
+  .icon {
+     position:absolute;
+    top:-50px;
+    right:0;
+    left:0;
+    margin:auto;
+  }
+  .img-1 {
+    height:150px;
+    border-radius: 8px 8px 0 0;
+    img {
+      min-width:300px;
+    }
+  }
+  .content{
+    padding:10px 20px 30px;
+  }
+  p {
+    color:$grey-6;
+  }
+  .title-3 {
+    text-align: center;
+    font-weight:400;
+    color:black;
+    font-size:1.3em;
+  }
+  a {
+    position:absolute;
+    bottom:10px;
+    right:20px;
+  }
 }
 
+.img-1 {
+  overflow: hidden;
+  margin-bottom:10px;
+}
 
+.link-1 {
+background:url('../img/icons/link.png') center right no-repeat;
+padding-right:25px;
+line-height:1em;
 
+}
+
+.border-top {
+  border-top:solid 1px $grey-4;
+  .title-2 {
+    width:250px;
+    position:relative;
+    top:-18px;
+  }
+}
