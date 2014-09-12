@@ -262,7 +262,7 @@ if (function_exists('register_sidebar'))
         'id' => 'footer-1',
         'before_widget' => '<div id="%1$s" class="%2$s footer-wdgt-1">',
         'after_widget' => '</div>',
-        'before_title' => '<h3>',
+        'before_title' => '<h3 class="title-3">',
         'after_title' => '</h3>'
     ));
 

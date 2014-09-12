@@ -184,6 +184,10 @@ footer items
 =================================================================== */
 
 .footer-items {
+    padding:20px 0;
+    p {
+      margin:0 0 10px;
+    }
     background:$color-3;
     padding: 25px 0;
     border-top: solid 1px $grey-2;
@@ -504,7 +508,6 @@ input[type='button'], input[type='submit'], button, .button {
 
 .img-1 {
   overflow: hidden;
-  margin-bottom:10px;
 }
 
 .link-1 {

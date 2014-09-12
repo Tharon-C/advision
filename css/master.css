@@ -127,10 +127,13 @@ banner
 footer items
 =================================================================== */
 .footer-items {
+  padding: 20px 0;
   background: #e5e5e5;
   padding: 25px 0;
   border-top: solid 1px #F2F2F2;
   color: #525252; }
+  .footer-items p {
+    margin: 0 0 10px; }
   .footer-items ul {
     padding-left: 0; }
   .footer-items .widget_nav_menu {
@@ -394,8 +397,7 @@ input[type='button'], input[type='submit'], button, .button {
     right: 20px; }
 
 .img-1 {
-  overflow: hidden;
-  margin-bottom: 10px; }
+  overflow: hidden; }
 
 .link-1 {
   background: url('../img/icons/link.png') center right no-repeat;
