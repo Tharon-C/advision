@@ -45,6 +45,7 @@ article li {margin-bottom: 20px;}
 img {display:block;vertical-align:bottom;}
 
 /*helper classes*/
+.hide {display:none;}
 .flex {width:100%;}
 .inlineblk{display:inline-block !important;}
 .block {display:block !important;}
@@ -206,6 +207,7 @@ img {display:block;vertical-align:bottom;}
   .l-5-6 {width: 83.333333%;}
   .hide-l-and-below {display: none;visibility: hidden;}
   .show-l-and-below {display: block;visibility: visible;}
+  .l-pad-10px {padding:10px;}
 }
 @media (max-width: 60em) and (min-width: 45em) {
   .hide-on-l {display: none;visibility: hidden;}
