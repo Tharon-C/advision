@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /*
 	Theme Name: Advision
 	Theme URI: 
@@ -578,7 +577,7 @@ img {display:block;vertical-align:bottom;}
   .m-marg-tb-40px {margin-top:40px;margin-bottom:40px;}
   .m-marg-tb-50px {margin-top:50px;margin-bottom:50px;}
 }
-}
+
 @media (max-width: 45em) and (min-width: 30em) {
   .hide-on-m {display: none;visibility: hidden;}
   .show-on-m {display: block;visibility: visible;}
