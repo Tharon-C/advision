@@ -1,4 +1,4 @@
-<?php /* Template Name:Home Page */ get_header(); ?>
+<?php /* Template Name:Home Page */ get_header('home'); ?>
 
 	<main role="main">
 		<!-- section -->
@@ -6,7 +6,7 @@
             <?php if (have_posts()): while (have_posts()) : the_post(); ?>
 
 			<!-- article -->
-			<article class="home-content" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+			<article class="content" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 				<?php the_content(); ?>
 

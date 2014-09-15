@@ -25,38 +25,51 @@
 	<body <?php body_class(); ?>>
 
 		<!-- wrapper -->
-		<div class="wrapper">
+		<div class="wrapper clear">
 
 			<!-- header -->
-			<header class="header clear" role="banner">
-                <div class="business-info section-top clear">
+		<header class="header clear hide-m-and-below" role="banner">
+				<div class="business-info section-top clear">
                     
-                    <div class="page-wrapper">
-                    <?php dynamic_sidebar('widget-area-1'); ?>
-					
-                     </div>
+                    <div class="page-wrapper clear">
+                    <?php dynamic_sidebar('top-l'); ?>
+                    <?php dynamic_sidebar('top-r'); ?>
+					</div>
                     
-                    </div>
+                </div>
+                <div class="p-wrap">
+				  <div class="logo">
+										<a href="<?php echo home_url(); ?>">
+											<!-- svg logo - toddmotto.com/mastering-svg-use-for-a-retina-web-fallbacks-with-png-script -->
+											<img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="Logo" class="logo-img">
+										</a>
+				                    </div>
 
 
 					<!-- nav -->
-					<nav class="nav int-nav clear" role="navigation">
+					<nav class="nav clear" role="navigation">
     
-                         
+                        <div class="page-wrapper clear">    
                         <!-- logo -->
-				    <div class="logo">
-						<a href="<?php echo home_url(); ?>">
-							<!-- svg logo - toddmotto.com/mastering-svg-use-for-a-retina-web-fallbacks-with-png-script -->
-							<img src="<?php echo get_template_directory_uri(); ?>/img/woodandstone-logo.png" alt="Logo" class="logo-img">
-						</a>
-                    </div>
+				  
 					<!-- /logo -->
                            
                             <?php  add_custom_nav_menu('menu-1'); ?>
-                
+                 </div>
 					</nav>
 					<!-- /nav -->
-                
-              <?php echo do_shortcode('[layerslider id="2"]'); ?> 
-</header>
+				</div>
+      		</header>
 			<!-- /header -->
+			<div class="banner hide-m-and-below">
+			<?php echo do_shortcode('[layerslider id="2"]'); ?>
+			</div>
+
+<!-- mobile header -->
+
+			<div class="pad-10px hide show-m-and-below">
+			<img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="Logo" class=" p-c pad-30px flex">
+			<a class="btn-1 block marg-tb-10px">Call Us</a>
+			<a class="btn-1 block">Get Directions</a>
+			</div>
+			

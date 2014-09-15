@@ -15,9 +15,8 @@ gulp.task('style', function() {
 gulp.task('default', function() {
 	var client = ['style'],
         server = refresh();
-        
 	gulp.watch ('./sass/*.scss' , client)
-    gulp.watch (['./js/*.js', './*.php']).on('change' , function(file) {
+    gulp.watch (['./js/*.js', './*.php', './*.css']).on('change' , function(file) {
         server.changed(file.path);
     });
 });

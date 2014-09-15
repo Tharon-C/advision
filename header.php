@@ -28,9 +28,6 @@
 		<div class="wrapper clear">
 
 			<!-- header -->
-			<div class="banner hide-m-and-below">
-			<?php echo do_shortcode('[layerslider id="2"]'); ?>
-			</div>
 			<header class="header clear hide-m-and-below" role="banner">
 				<div class="business-info section-top clear">
                     
@@ -68,6 +65,4 @@
 
 			<div class="pad-10px hide show-m-and-below">
 			<img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="Logo" class=" p-c pad-30px flex">
-			<a class="btn-1 block marg-tb-10px">Call Us</a>
-			<a class="btn-1 block">Get Directions</a>
 			</div>
