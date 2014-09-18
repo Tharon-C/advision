@@ -374,7 +374,13 @@ Footer Images
   margin-top: -1.5em;
 }
 
-input, textarea {
+span.wpcf7-list-item-label {
+padding: 5px;
+line-height:1em;
+}
+
+
+input [type='text'] , textarea {
   /* Use for styling text based form elements, like name, email, password. 
   Button/submit specific styles below, those will override */
   display: block;

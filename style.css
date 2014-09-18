@@ -30,7 +30,7 @@ a:hover,a:active, input:hover {outline:0;transition: 420ms;}
 
 input:focus {outline:0;border:1px solid #04A4CC;}
 button {background:none;border:none;}
-input {width: 100%;padding: 5px;margin:5px 0;border: solid 1px #E0E0E0;    background: rgb(255, 255, 255);font-size: 16px;}
+input {padding: 5px;margin:5px 0;border: solid 1px #E0E0E0;    background: rgb(255, 255, 255);font-size: 16px;}
 
 textarea {overflow: auto;vertical-align: top;width: 100%;padding: 10px;margin: 5px 0;border: solid 1px #E0E0E0;height: 84px;      background: rgb(255, 255, 255);}
 
