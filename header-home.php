@@ -32,7 +32,6 @@
 				<div class="business-info section-top clear">
                     
                     <div class="page-wrapper clear">
-                    <?php dynamic_sidebar('top-l'); ?>
                     <?php dynamic_sidebar('top-r'); ?>
 					</div>
                     
@@ -69,7 +68,6 @@
 
 			<div class="pad-10px hide show-m-and-below">
 			<img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="Logo" class=" p-c pad-30px flex">
-			<a class="btn-1 block marg-tb-10px">Call Us</a>
-			<a class="btn-1 block">Get Directions</a>
+			    <?php dynamic_sidebar('mobile-buttons'); ?>
 			</div>
 			

@@ -224,9 +224,9 @@ if (function_exists('register_sidebar'))
 {
     // Define Sidebar Top Left
     register_sidebar(array(
-        'name' => __('Top Left', 'Area for business info etc'),
+        'name' => __('Mobile Buttons', 'Area for business info etc'),
         'description' => __('Area for business info etc', 'html5blank'),
-        'id' => 'top-l',
+        'id' => 'mobile-buttons',
         'before_widget' => '<div id="%1$s" class="%2$s top-wdgt-l">',
         'after_widget' => '</div>',
         'before_title' => '<h3 class="title-2">',

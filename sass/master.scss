@@ -70,10 +70,7 @@ header
       color:black;
       float: left;
     }
-     .top-wdgt-r {
-      color:black;
-      float: right;
-    }
+     
       li {
         display: inline-block;
         margin-left: 20px;
@@ -546,5 +543,12 @@ line-height:1em;
     width:250px;
     position:relative;
     top:-18px;
+    @media (max-width: 45em) {
+        width:100%;
+       } 
   }
+}
+
+.wprmenu_bar {
+  z-index:900 !important;
 }
